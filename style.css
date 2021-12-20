@@ -29,6 +29,7 @@ html  {
 
 header {
   position: relative;
+  z-index: 1;
   margin: 30px 0;
 }
 
@@ -60,6 +61,8 @@ h2 {
 }
 
 .nowplaying {
+  position: relative;
+  z-index: 1;
   font-size: 120px;
   line-height: 1;
   color: #eee;
@@ -155,7 +158,8 @@ h2 {
 
 
 #parallax {
-  position: absolute; 
+  position: absolute;
+  z-index: 2;
   top: 0px;
   width: 100vw;
   height: 100vh;
