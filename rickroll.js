@@ -31,10 +31,13 @@ document.addEventListener('keydown', function (event) {
     else if (event.key == "l" && rickrollnum == 6) {
         rickroll();
     }
+    else {
+        rickrollnum = 0
+    }
 });
 
 function rickroll() {
     document.getElementById("parallax").style.backgroundImage = "url(https://media4.giphy.com/media/OB9IwSCXxDu5gpyOFk/giphy.gif)";
-    var audio = new Audio('https://github.com/Ociione/Piano-website-misc/blob/main/rick.mp3?raw=true');
+    var audio = new Audio('https://github.com/Ociione/ociione.github.io/blob/main/rick.mp3?raw=true');
     audio.play();
 }
